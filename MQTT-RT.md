@@ -7,6 +7,7 @@ MQTT/RT is a real-time messaging bus for robotics, industrial automation, and au
 ## Architecture
 
 MQTT/RT utilizes a distributed, peer-to-peer architecture, eliminating the need for a central broker in its most basic form. In this model, the network itself acts as a broker, with messages often broadcast or multicast over UDP. Each peer in the network can function as both a publisher and a subscriber. For scenarios requiring routing across physically isolated networks or bridging to traditional MQTT brokers, dedicated routing and bridging services can be implemented. Some advanced implementations of real-time MQTT, like RT-MQTT, leverage Software Defined Networking (SDN) to manage network resources and ensure real-time communication guarantees.
+
 ![MQTT/RT Bus Architecture](assets/bus.png)
 
 ## Key Features
@@ -80,6 +81,8 @@ For no central MQTT broker to connect to, MQTT/RT peers must utilize discovery m
 
 MQTT/RT peers ping each other using PINGREQ/PINGRESP packets in the discovery phase.
 
+![Discovery Process](assets/discovery.png)
+
 Shall imitate ARP mechanism to avoid signaling storm.
 
 Establish a MAC/IP-client-Topic pair in this stage.
@@ -94,6 +97,8 @@ MQTT/RT uses CONNECT/CONNACK packets to establish a session between peers found 
 
 The session handshake process is as following diagram:
 
+![Session Handshake](assets/session.png)
+
 ## Publish/Subscribe
 
 Once a session is established, peers can communicate using the MQTT publish/subscribe messages:
@@ -101,6 +106,10 @@ Once a session is established, peers can communicate using the MQTT publish/subs
 1. A publisher sends a PUBLISH packet containing the topic and payload to other peers in the network.
 2. Peers that have subscribed to the published topic receive the message.
 3. The delivery reliability is determined by the QoS level specified in the PUBLISH packet.
+
+The publish/subscribe process is illustrated in the following diagram:
+
+![Publish/Subscribe](assets/pubsub.png)
 
 ## Request/Reply
 
@@ -190,9 +199,13 @@ MQTT/RT can be implemented using either threads or an actor-based concurrency mo
 
 The MQTT/RT routing service facilitates communication between physically isolated domains. It enables messages published in one domain to be routed to subscribers in another domain, extending the reach of the messaging bus across different networks.
 
+![Routing Service](assets/routing.png)
+
 ## Bridging
 
 The bridging service allows an MQTT/RT bus to connect and interact with traditional MQTT brokers. This enables seamless integration with existing MQTT-based systems and allows MQTT/RT devices to communicate with devices connected to a standard MQTT broker.
+
+![Bridging Service](assets/bridging.png)
 
 ## Integration
 
