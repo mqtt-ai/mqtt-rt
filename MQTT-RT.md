@@ -7,6 +7,7 @@ MQTT/RT is a real-time messaging bus for robotics, industrial automation, and au
 ## Architecture
 
 MQTT/RT utilizes a distributed, peer-to-peer architecture, eliminating the need for a central broker in its most basic form. In this model, the network itself acts as a broker, with messages often broadcast or multicast over UDP. Each peer in the network can function as both a publisher and a subscriber. For scenarios requiring routing across physically isolated networks or bridging to traditional MQTT brokers, dedicated routing and bridging services can be implemented. Some advanced implementations of real-time MQTT, like RT-MQTT, leverage Software Defined Networking (SDN) to manage network resources and ensure real-time communication guarantees.
+![MQTT/RT Bus Architecture](assets/bus.png)
 
 ## Key Features
 
