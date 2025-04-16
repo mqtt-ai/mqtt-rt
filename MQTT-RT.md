@@ -48,32 +48,23 @@ See: [MQTT-UDP GitHub Repository](https://github.com/dzavalishin/mqtt_udp)
 
 ## Concepts
 
-### Domain
-Represents a physically isolated MQTT/RT messaging bus.
-
-### Namespace
-Represents a logically isolated MQTT/RT messaging bus.
-
-### Topic
-A hierarchical UTF-8 string used by the MQTT/RT broker (or network in brokerless mode) to filter messages for subscribers.
-
-### Publisher
-A client that sends (publishes) messages to a specific topic.
-
-### Subscriber
-A client that registers its interest (subscribes) in one or more topics to receive matching messages.
-
-### Message
-The unit of data transmission in MQTT/RT, consisting of a key, QoS level, metadata, and payload.
-
-### QoS (Quality of Service)
-Defines the level of reliability for message delivery:
-- **0 - At most once**: Messages are sent without any delivery confirmation and may be lost.
-- **1 - At least once**: Messages are guaranteed to be delivered at least once, but may be duplicated.
-- **2 - Exactly once**: Messages are guaranteed to be delivered exactly once to the subscriber.
-
-### Hierarchy
-Messages are organized within a hierarchy: domain → namespace → topic → message (key)
+- Domain
+  Represents a physically isolated MQTT/RT messaging bus.
+-  Namespace
+  Represents a logically isolated MQTT/RT messaging bus.
+- Topic
+  A hierarchical UTF-8 string used by the MQTT/RT broker (or network in brokerless mode) to filter messages for subscribers.
+- Publisher
+  A client that sends (publishes) messages to a specific topic.
+- Subscriber
+  A client that registers its interest (subscribes) in one or more topics to receive matching messages.
+- Message
+  The unit of data transmission in MQTT/RT, consisting of a key, QoS level, metadata, and payload.
+- QoS (Quality of Service)
+  Defines the level of reliability for message delivery:
+  - **0 - At most once**: Messages are sent without any delivery confirmation and may be lost.
+  - **1 - At least once**: Messages are guaranteed to be delivered at least once, but may be duplicated.
+  - **2 - Exactly once**: Messages are guaranteed to be delivered exactly once to the subscriber.
 
 ## Discovery
 
