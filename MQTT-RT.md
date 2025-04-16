@@ -36,38 +36,15 @@ See: [MQTT-UDP GitHub Repository](https://github.com/dzavalishin/mqtt_udp)
 
 ## Use Cases
 
-### Robotics
-- [How to Set Up MQTT for a Robotics Project](https://automaticaddison.com/how-to-set-up-mqtt-for-a-robotics-project/)
-- [Control Simple Robot Over MQTT](https://www.instructables.com/Control-Simple-Robot-Over-MQTT/)
-- [Examining the Adoption of MQTT in Robotics and Automation](https://roboticsandautomationnews.com/2023/10/03/examining-the-adoption-of-mqtt-in-robotics-and-automation/72652/)
-- [ALIFE Robotics Journal Article](https://alife-robotics.org/article/vol9issue2/9215.pdf)
-
-### Autonomous
-- [AI Autonomous Driving for Public Transportation](https://imagry.co/ai-autonomous-driving-for-public-transportation/)
-- [Volvo Buses Automation](https://www.volvobuses.com/us-en/why-volvo/automation-buses.html)
-
-### Railways
-### Aerospace
-
-### Home Automation
-- [What is MQTT Use Cases](https://www.pubnub.com/blog/what-is-mqtt-use-cases/)
-- [Role of MQTT Protocol in IoT Messaging](https://www.airtel.in/b2b/insights/blogs/role-of-mqtt-protocol-in-iot-messaging/)
-- [MQTT: Why Would I Use It?](https://community.home-assistant.io/t/mqtt-why-would-i-use-it/159852)
-- [MQTT Market Trends for 2024](https://www.kai-waehner.de/blog/2023/12/08/mqtt-market-trends-for-2024-cloud-unified-namespace-sparkplug-kafka-integration/)
-
-### Industrial Automation
-- [RTAutomation MQTT](https://www.rtautomation.com/technologies/mqtt/)
-- [Examining the Adoption of MQTT in Robotics and Automation](https://roboticsandautomationnews.com/2023/10/03/examining-the-adoption-of-mqtt-in-robotics-and-automation/72652/)
-- [Applied Smart Factory](https://appliedsmartfactory.com/semiconductor-blog/manufacturing-execution/message-bus/)
-- [What is CAN Bus and How Does It Work?](https://actisense.com/news/what-is-can-bus-and-how-does-it-work/)
-- [CAN Bus in Industrial Automation](https://dorleco.com/can-bus-in-industrial-automation/)
-- [Control Buses](https://www.bh-automation.com/Resources/For-automation-and-control-engineers/Communications/Control-buses.html)
-
-### IoT Gateway
-- [RTAutomation MQTT](https://www.rtautomation.com/technologies/mqtt/)
-
-### Military Defense
-### Aviation
+- Robotics
+- Autonomous
+- Railways
+- Aerospace
+- Home Automation
+- Industrial Automation
+- IoT Gateway
+- Military Defense
+- Aviation
 
 ## Concepts
 
@@ -268,14 +245,26 @@ Performance benchmarks for MQTT/RT include measurements for:
 ## References
 
 - [IANA Multicast Addresses](https://www.iana.org/assignments/multicast-addresses/multicast-addresses.xhtml)
-
-### DDS
 - [OpenDDS Documentation](https://opendds.org/documentation/)
 - [Cyclone DDS Documentation](https://cyclonedds.io/docs/)
 - [eProsima Fast DDS Documentation](https://fast-dds.docs.eprosima.com/en/latest/)
 - [RTI Connext Documentation](https://community.rti.com/static/documentation/connext-dds/7.2.0/doc/manuals/connext_dds_professional/getting_started_guide/cpp98/before.html)
 - [Zenoh](https://zenoh.io/)
 - [ROS2](https://www.ros.org/)
-
-### Harmony SoftBus
-### Cyber RT
+- [How to Set Up MQTT for a Robotics Project](https://automaticaddison.com/how-to-set-up-mqtt-for-a-robotics-project/)
+- [Control Simple Robot Over MQTT](https://www.instructables.com/Control-Simple-Robot-Over-MQTT/)
+- [Examining the Adoption of MQTT in Robotics and Automation](https://roboticsandautomationnews.com/2023/10/03/examining-the-adoption-of-mqtt-in-robotics-and-automation/72652/)
+- [ALIFE Robotics Journal Article](https://alife-robotics.org/article/vol9issue2/9215.pdf)
+- [AI Autonomous Driving for Public Transportation](https://imagry.co/ai-autonomous-driving-for-public-transportation/)
+- [Volvo Buses Automation](https://www.volvobuses.com/us-en/why-volvo/automation-buses.html)
+- [What is MQTT Use Cases](https://www.pubnub.com/blog/what-is-mqtt-use-cases/)
+- [Role of MQTT Protocol in IoT Messaging](https://www.airtel.in/b2b/insights/blogs/role-of-mqtt-protocol-in-iot-messaging/)
+- [MQTT: Why Would I Use It?](https://community.home-assistant.io/t/mqtt-why-would-i-use-it/159852)
+- [MQTT Market Trends for 2024](https://www.kai-waehner.de/blog/2023/12/08/mqtt-market-trends-for-2024-cloud-unified-namespace-sparkplug-kafka-integration/)
+- [RTAutomation MQTT](https://www.rtautomation.com/technologies/mqtt/)
+- [Examining the Adoption of MQTT in Robotics and Automation](https://roboticsandautomationnews.com/2023/10/03/examining-the-adoption-of-mqtt-in-robotics-and-automation/72652/)
+- [Applied Smart Factory](https://appliedsmartfactory.com/semiconductor-blog/manufacturing-execution/message-bus/)
+- [What is CAN Bus and How Does It Work?](https://actisense.com/news/what-is-can-bus-and-how-does-it-work/)
+- [CAN Bus in Industrial Automation](https://dorleco.com/can-bus-in-industrial-automation/)
+- [Control Buses](https://www.bh-automation.com/Resources/For-automation-and-control-engineers/Communications/Control-buses.html)
+- [RTAutomation MQTT](https://www.rtautomation.com/technologies/mqtt/)
